@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 9px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
@@ -34,7 +34,7 @@ html {
     background-color: black;
     left: 0;
     top: 0;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,8 +42,8 @@ html {
 }
 
 .nav-bar .brand a {
-    font-family: 'Flash Back - Demo', sans-serif;
-    font-size: 3rem;
+    font-family: system-ui;
+    font-size: 2rem;
     color: white;
 }
 
@@ -54,13 +54,13 @@ html {
 }
 
 .nav-bar .nav-list .hamburger {
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
     transition: .3s ease transform;
     cursor: pointer;
 }
@@ -84,8 +84,8 @@ html {
 }
 
 .nav-bar .nav-list .hamburger .bar {
-    height: 2px;
-    width: 30px;
+    height: 1px;
+    width: 20px;
     background-color: white;
     position: relative;
     display: flex;
@@ -178,28 +178,28 @@ html {
 }
 
 .hero .hero-info {
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
 .hero .hero-info .hero-info-heading {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 500;
     color: whitesmoke;
 }
 
 .hero .hero-info .hero-info-subheading {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
     color: whitesmoke;
 }
 
 .hero .hero-info .hero-info-button {
-    margin-top: 30px;
-    padding: 2rem 5rem;
+    margin-top: 10px;
+    padding: 2rem 1rem;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -209,7 +209,7 @@ html {
 
 .hero .hero-img {
     height: auto;
-    width: 80%;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
@@ -243,18 +243,18 @@ html {
 }
 
 .about .about-info .about-info-desc {
-    font-size: 1.3rem;
+    font-size: 2rem;
     line-height: 2rem;
     margin-top: 10px;
 }
 
 .about .about-info .about-info-button {
-    padding: 1.6rem 2.6rem;
+    padding: 1rem 1rem;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.548);
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     margin-top: 20px;
@@ -295,7 +295,7 @@ html {
 /* End About Section  */
 
 
-/* Projects section  */
+/* projects section  */
 
 .projects {
     flex-direction: column;
@@ -309,14 +309,14 @@ html {
 }
 
 .projects .projects-header .projects-header-heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: black;
 }
 
 .projects .projects-header .projects-header-desc {
-    font-size: 1.3rem;
+    font-size: 2rem;
     line-height: 2rem;
     margin-top: 20px;
 }
@@ -330,7 +330,7 @@ html {
     flex-direction: column;
 }
 
-.projects .projects-info .projects {
+.projects .projects-info .project {
     width: 100%;
     min-height: 300px;
     position: relative;
@@ -338,7 +338,7 @@ html {
     margin: 5px;
 }
 
-.projects .projects-info .projects .projects-card {
+.projects .projects-info .project .project-card {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -347,8 +347,8 @@ html {
     display: block;
 }
 
-.projects .projects-info .projects .projects-card .projects-front,
-.projects .projects-info .projects .projects-card .projects-back {
+.projects .projects-info .project .project-card .project-front,
+.projects .projects-info .project .project-card .project-back {
     position: absolute;
     left: 0;
     top: 0;
@@ -363,40 +363,40 @@ html {
     padding: 10px;
 }
 
-.projects .projects-info .projects .projects-card .projects-back {
+.projects .projects-info .project .project-card .project-back {
     transform: rotateY(180deg);
 }
 
-.projects .projects-info .projects .projects-card .projects-front i {
+.projects .projects-info .project .project-card .project-front i {
     font-size: 4rem;
     color: black;
     margin-bottom: 10px;
 }
 
-.projects .projects-info .projects .projects-card .projects-front .projects-front-heading,
-.projects .projects-info .projects .projects-card .projects-back .projects-back-heading {
+.projects .projects-info .project .project-card .project-front .project-front-heading,
+.projects .projects-info .project .project-card .project-back .project-back-heading {
     font-size: 2.5rem;
     text-transform: capitalize;
 }
 
-.projects .projects-info .projects:hover .projects-card {
+.projects .projects-info .project:hover .project-card {
     transform: rotateY(180deg);
 }
 
-.projects .projects-info .projects .projects-card .projects-back .projects-back-desc {
+.projects .projects-info .project .project-card .project-back .project-back-desc {
     font-size: 1.3rem;
     margin-top: 10px;
     text-align: center;
 }
 
-.projects .projects-info .projects:nth-child(2) .projects-card .projects-front {
+.projects .projects-info .project:nth-child(2) .project-card .project-front {
     background-image: url(./images/img-2.jpg);
     background-size: cover;
     position: relative;
     color: white;
 }
 
-.projects .projects-info .projects:nth-child(2) .projects-card .projects-front::after {
+.projects .projects-info .project:nth-child(2) .project-card .project-front::after {
     content: '';
     position: absolute;
     left: 0;
@@ -407,9 +407,12 @@ html {
     z-index: -1;
 }
 
-.projects .projects-info .projects:nth-child(2) .projects-card .projects-front i {
+.projects .projects-info .project:nth-child(2) .project-card .project-front i {
     color: white;
 }
+
+
+/* End projects section  */
 
 
 /* skills Section  */
@@ -424,15 +427,15 @@ html {
 
 .skills .skills-heading {
     color: black;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .skills .skills-button {
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.267);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .2rem;
@@ -444,6 +447,9 @@ html {
 .skills .skills-button:hover {
     background-color: black;
 }
+
+
+/* End skills Section  */
 
 
 /* Footer section  */
@@ -463,7 +469,7 @@ html {
 }
 
 .footer .footer-contact .footer-contact-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -481,6 +487,9 @@ html {
     margin: .4rem;
     display: inline-block;
 }
+
+
+/* End Footer section  */
 
 
 /* Media query for desktop and tab  */
@@ -540,7 +549,7 @@ html {
         flex-direction: row;
         width: 80%;
     }
-    .projects .projects-info .projects {
+    .projects .projects-info .project {
         margin: 0;
     }
 }
@@ -553,7 +562,7 @@ html {
 
 @media only screen and (min-width: 1200px) {
     .hero .hero-info .hero-info-heading {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .hero .hero-info .hero-info-subheading {
         letter-spacing: .8rem;
