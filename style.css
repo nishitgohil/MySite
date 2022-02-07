@@ -42,7 +42,7 @@ html {
 }
 
 .nav-bar .brand a {
-    font-family: system-ui;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: white;
 }
