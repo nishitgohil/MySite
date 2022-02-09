@@ -44,7 +44,7 @@ html {
 .nav-bar .brand a {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color: white;
+    color: whitesmoke;
 }
 
 .nav-bar .nav-list {
@@ -116,7 +116,7 @@ html {
     top: 0;
     left: 0;
     background-color: rgb(46, 45, 45);
-    padding: 5rem 0;
+    padding: 5rem;
     transform: translateY(-100%);
     transition: .3s ease transform;
     text-align: center;
@@ -197,9 +197,10 @@ html {
 
 .hero .hero-info .hero-info-button {
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 2rem 1rem;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -425,27 +426,47 @@ html {
     padding: 3rem 2rem;
 }
 
+.skill-desc {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
 .skills .skills-heading {
     color: black;
     font-size: 2.5rem;
     text-align: center;
 }
 
-.skills .skills-button {
-    padding: 1rem 1rem;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.267);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .2rem;
-    margin-top: 10px;
-    color: whitesmoke;
-    transition: .3s ease background-color;
+.skill-box {
+    margin-bottom: 1px;
 }
 
-.skills .skills-button:hover {
+.skill-box label {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: black;
+}
+
+.progress {
+    height: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
     background-color: black;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.progress-bar {
+    box-shadow: none;
+    background-color: whitesmoke;
+    text-align: right;
+    font-weight: 700;
+    font-size: 120px;
+    padding-right: 10px;
+    padding-top: 0px;
 }
 
 
@@ -462,6 +483,8 @@ html {
     flex-direction: column;
     text-align: center;
     padding: 5rem;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .footer .footer-contact {
@@ -472,7 +495,7 @@ html {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: auto;
 }
 
 .footer .footer-contact .footer-contact-info {
@@ -488,8 +511,55 @@ html {
     display: inline-block;
 }
 
+.footer .footer-button {
+    font-size: 1rem;
+    padding-top: 0px;
+    letter-spacing: 2rem;
+}
+
+.footer-button-info {
+    font-size: 1000rem;
+    padding-top: 0px;
+    letter-spacing: 2rem;
+}
+
 
 /* End Footer section  */
+
+
+/* form section */
+
+.contact-box {
+    margin-bottom: 1px;
+    width: auto;
+    height: auto;
+}
+
+.contact-box .form-group {
+    margin-bottom: 4px;
+    width: auto;
+    height: auto;
+}
+
+.contact-box label {
+    width: auto;
+    height: auto;
+    color: whitesmoke;
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+.contact-box .form-control {
+    width: auto;
+    height: auto;
+}
+
+.contact-form .btn-default {
+    background: black;
+}
+
+
+/* End form section */
 
 
 /* Media query for desktop and tab  */
