@@ -13,7 +13,7 @@ html {
 
 .container {
     width: 100%;
-    height: auto;
+    height: 50%S;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ html {
     height: auto;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     background-color: black;
 }
 
@@ -499,7 +499,7 @@ html {
 }
 
 .footer .footer-contact .footer-contact-info {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding-top: 10px;
     letter-spacing: .2rem;
 }
@@ -518,7 +518,7 @@ html {
 }
 
 .footer-button-info {
-    font-size: 1000rem;
+    font-size: 100px;
     padding-top: 0px;
     letter-spacing: 2rem;
 }
@@ -531,27 +531,20 @@ html {
 
 .contact-box {
     margin-bottom: 1px;
-    width: auto;
-    height: auto;
 }
 
 .contact-box .form-group {
     margin-bottom: 4px;
-    width: auto;
-    height: auto;
 }
 
 .contact-box label {
-    width: auto;
-    height: auto;
     color: whitesmoke;
     margin-bottom: 1px;
     font-size: 14px;
 }
 
 .contact-box .form-control {
-    width: auto;
-    height: auto;
+    height: 21px;
 }
 
 .contact-form .btn-default {
