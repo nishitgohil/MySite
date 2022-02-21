@@ -14,7 +14,7 @@
     <section id="nav-bar" class="container">
         <header class="nav-bar">
             <div class="brand">
-                <a href="#hero" style="text-decoration: none;">
+                <a href="index.html" style="text-decoration: none;">
                     <h1>Nishit Gohil</h1>
                 </a>
             </div>
@@ -57,12 +57,12 @@
     <section id="about" class="about container">
         <div class="about-info">
             <h1 class="about-info-heading">About Me</h1>
-            <p class="about-info-desc">Hello I am Nishit Gohil my profession is IT Engineering , A hard-working self motivated and responsible individual who is keen to learn. now I’m working as a Web Developer.</p>
+            <p class="about-info-desc">Hello I am Nishit Gohil my profession is IT Engineering , A hard-working self motivated and responsible individual who is keen to learn. now Iam working as a Web Developer.</p>
             <a href="./ng.pdf" type="button" class="about-info-button">Download Resume</a>
         </div>
         <div class="about-img">
             <div class="about-img-wrapper">
-                <img src="./images/img-2.jpg" alt="">
+                <img src="./images/img-2.jpg">
             </div>
         </div>
     </section>
@@ -203,50 +203,53 @@
                         </div>
                     </div>
                 </td>
-                <!--
                 <td>
                     <div class="container">
                         <div class="footer-social-follow">
                             <div class="col-md-6 col-sm-6 wow fadeInRight">
                                 <div class="footer,contact-box">
                                     <div class="footer,contact-form">
-                                        <form class="contact-box">
-                                            <table>
-                                                <div class="form-group">
-                                                    <tr>
-                                                        <th colspan="2" style="font-size: 20px;">Contact</th><br><br>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label>Name</label></td>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"></td>
-                                                        </tr>
-                                                    </tr>
-                                                </div>
-                                                <div class="form-group">
-                                                    <tr>
-                                                        <td><label>Email</label></td>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"></td>
-                                                        </tr>
-                                                    </tr>
-                                                </div>
-                                                <div class="form-group">
-                                                    <tr>
-                                                        <td><label>Message</label></td>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"></td>
-                                                        </tr>
-                                                    </tr>
-                                                </div>
+                                        <!-- <form class="contact-box"> -->
+                                        <table>
 
-                                                <div class="contact-box">
+                                            <div class="form-group">
+                                                <form id="contact-form" method="post" action="contact.php">
                                                     <tr>
-                                                        <td colspan="2">
-                                                            <br></br>
-                                                            <input class="input-btn" type="submit" style="height:30px;width:100px; border:0px solid white;;" value="Mail it">
+                                                        <th colspan="2" style="font-size: 20px;">Contact</th>
+                                                        <br><br>
                                                     </tr>
-                                        </form>
+                                                    <tr>
+                                                        <td><label>Name:</label></td>
+                                                        <tr>
+                                                            <td><input type="text" name="name" class="form-control" required></td>
+                                                        </tr>
+                                                    </tr>
+                                            </div>
+                                            <div class="form-group">
+                                                <tr>
+                                                    <td><label>Email:</label></td>
+                                                    <tr>
+                                                        <td><input type="email" name="email" class="form-control" required></td>
+                                                    </tr>
+                                                </tr>
+                                            </div>
+                                            <div class="form-group">
+                                                <tr>
+                                                    <td><label>Message</label></td>
+                                                    <tr>
+                                                        <td><textarea class="form-control" name="message" required></textarea></td>
+                                                    </tr>
+                                                </tr>
+                                            </div>
+
+                                            <div class="form-group, contact-box">
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <br></br>
+                                                        <button class="btn btn-success" name="send">Send</button>
+                                                        <!-- style="height:30px;width:100px; border:0px;" value="Mail it"> -->
+                                                </tr>
+                                                </form>
                                         </table>
                                         </div>
                                     </div>
@@ -260,14 +263,12 @@
             <div class="footer"><span>
                     <h2>Copyright © NG, <a href="index.html">ME</h2></a>
                 </span>
-            </div> -->
+            </div>
             <!-- End Footer section  -->
 
             <!-- .js -->
             <script src="./app.js"></script>
-            <script src="#"></script>
-            <script src="#"></script>
-            <script src="#"></script>
+
             <!-- End .js -->
 </body>
 
