@@ -72,7 +72,20 @@
     <section id="projects" class="projects container">
         <div class="projects-header">
             <h1 class="projects-header-heading">projects</h1>
-            <p class="projects-header-desc">Web Development, Moblie Application</p>
+           <p class="projects-header-desc">Web Development, Moblie Application</p>
+            <button class="btn btn-success" name="send" style="
+                margin-top: 1rem;
+                        display: inline-block;
+                        padding: 1rem 3.5rem;
+                        border-radius: 0rem;
+                        font-size: 1.7rem;
+                        cursor: pointer;
+                        background: none;
+                        color: var(--black);
+                        box-shadow: var(--box-shadow);
+                        text-decoration: none;
+                    ">
+                <a href="./work.html" type="button" class="about-info-button">work</a> </button>
         </div>
         <div class="projects-info">
             <div class="project">
@@ -210,48 +223,48 @@
                                 <div class="footer,contact-box">
                                     <div class="footer,contact-form">
                                         <!-- <form class="contact-box"> -->
-                                        <table>
-
-                                            <div class="form-group">
-                                                <form id="contact-form" method="post" action="contact.php">
-                                                    <tr>
-                                                        <th colspan="2" style="font-size: 20px;">Contact</th>
-                                                        <br><br>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label>Name:</label></td>
+                                            <table>
+                                                <!-- <form action="pro.php" method="POST"> -->
+                                                <div class="form-group">
+                                                    <form id="contact-form" method="post" action="contact.php">
                                                         <tr>
-                                                            <td><input type="text" name="name" class="form-control" required></td>
+                                                            <th colspan="2" style="font-size: 20px;">Contact</th>
+                                                            <br><br>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Name:</label></td>
+                                                            <tr>
+                                                                <td><input type="text" name="name" class="form-control" required></td>
+                                                            </tr>
+                                                        </tr>
+                                                </div>
+                                                <div class="form-group">
+                                                    <tr>
+                                                        <td><label>Email:</label></td>
+                                                        <tr>
+                                                            <td><input type="email" name="email" class="form-control" required></td>
                                                         </tr>
                                                     </tr>
-                                            </div>
-                                            <div class="form-group">
-                                                <tr>
-                                                    <td><label>Email:</label></td>
+                                                </div>
+                                                <div class="form-group">
                                                     <tr>
-                                                        <td><input type="email" name="email" class="form-control" required></td>
+                                                        <td><label>Message</label></td>
+                                                        <tr>
+                                                            <td><textarea class="form-control" name="message" required></textarea></td>
+                                                        </tr>
                                                     </tr>
-                                                </tr>
-                                            </div>
-                                            <div class="form-group">
-                                                <tr>
-                                                    <td><label>Message</label></td>
-                                                    <tr>
-                                                        <td><textarea class="form-control" name="message" required></textarea></td>
-                                                    </tr>
-                                                </tr>
-                                            </div>
+                                                </div>
 
-                                            <div class="form-group, contact-box">
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <br></br>
-                                                        <button class="btn btn-success" name="send">Send</button>
-                                                        <!-- style="height:30px;width:100px; border:0px;" value="Mail it"> -->
-                                                </tr>
-                                                </form>
-                                        </table>
-                                        </div>
+                                                <div class="form-group, contact-box">
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <br></br>
+                                                            <button class="btn btn-success" name="send">Send</button>
+                                                            <!-- style="height:30px;width:100px; border:0px;" value="Mail it"> -->
+                                                    </tr>
+                                                    </form>
+                                            </table>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -264,6 +277,14 @@
                     <h2>Copyright © NG, <a href="index.html">ME</h2></a>
                 </span>
             </div>
+
+            <div class="container,footer,footer-contact">
+                <p>Date/Time: <span id="datetime"></span></p>
+            </div>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+            </script>
             <!-- End Footer section  -->
 
             <!-- .js -->
